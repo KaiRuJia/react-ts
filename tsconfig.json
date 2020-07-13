@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "allowJs": true,
+    "paths": {
+      "@component": ["./src/component"],
+      "@container": ["./src/container"],
+      "@image": ["./src/image"],
+      "@styles": ["./src/styles"],
+      "@utils": ["./src/utils"]
+    }
+  }
+}
