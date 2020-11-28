@@ -1,12 +1,27 @@
 {
+  "compileOnSave": false,
+  "buildOnSave": false,
   "compilerOptions": {
-    "outDir": "./build/",
-    "sourceMap": true,
-    "noImplicitAny": false,
-    "esModuleInterop": true,
-    "jsx": "react",
     "baseUrl": ".",
+    "outDir": "build",
+    "module": "esnext",
+    "target": "es6",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
     "allowJs": true,
+    "rootDir": "./",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
     "paths": {
       "@component": ["./src/component"],
       "@container": ["./src/container"],
@@ -14,5 +29,7 @@
       "@styles": ["./src/styles"],
       "@utils": ["./src/utils"]
     }
-  }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "build", "public"]
 }

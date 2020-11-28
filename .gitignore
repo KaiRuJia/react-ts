@@ -5,4 +5,4 @@ vendors-manifest.json
 build
 .DS_Store
 .vscode
-package-lock.json
+/package-lock.json
